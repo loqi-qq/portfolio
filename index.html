@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egor Chernyshov — Front-End Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <main class="desktop-portfolio">
+
+        <header class="site-header">
+            <div class="logo">
+                <span class="logo-mark"></span>
+                <span class="logo-text">Egor Chernyshov</span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="btn btn-primary btn-hire">Hire me</a>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <span class="badge badge-available">● Available for projects</span>
+                <h1>Egor Chernyshov<br>Front-End Portfolio</h1>
+                <p class="hero-subtitle">
+                    I design and build clean web pages, learning Figma, HTML, CSS, and JavaScript.
+                </p>
+                <div class="hero-actions">
+                    <a href="#work" class="btn btn-primary">View work</a>
+                    <a href="#" class="btn btn-ghost">Download CV</a>
+                </div>
+
+                <ul class="hero-stats">
+                    <li>
+                        <strong>02</strong>
+                        <span>projects works</span>
+                    </li>
+                    <li>
+                        <strong>03</strong>
+                        <span>featured cases</span>
+                    </li>
+                    <li>
+                        <strong>100%</strong>
+                        <span>learning mode</span>
+                    </li>
+                </ul>
+            </div>
+
+            <aside class="code-card">
+                <div class="code-card-header">
+                    <span class="dot dot-red"></span>
+                    <span class="dot dot-yellow"></span>
+                    <span class="dot dot-green"></span>
+                    <span class="code-card-filename">portfolio.js</span>
+                </div>
+                <pre><code>const me = {
+  name: 'Egor',
+  focus: 'Front-end',
+  tools: ['Figma', 'HTML', 'CSS'],
+  goal: 'ship clean work'
+}</code></pre>
+                <div class="code-card-footer">
+                    <strong>Design first.</strong>
+                    <span>Build it step by step.</span>
+                </div>
+            </aside>
+        </section>
+
+        <section id="work" class="featured-work">
+            <header class="section-header">
+                <h2>Featured work</h2>
+                <p>Three project cards with enough structure for real HTML and CSS practice.</p>
+            </header>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-preview preview-mint">
+                        <span class="preview-bar"></span>
+                        <span class="preview-line"></span>
+                        <span class="preview-line"></span>
+                        <span class="preview-block"></span>
+                    </div>
+                    <h3>Landing page</h3>
+                    <p>A polished first page built with responsive sections and clear calls to action.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-preview preview-amber">
+                        <span class="preview-bar"></span>
+                        <span class="preview-line"></span>
+                        <span class="preview-line"></span>
+                        <span class="preview-block"></span>
+                    </div>
+                    <h3>Dashboard UI</h3>
+                    <p>A compact interface for cards, charts, filters, and repeated layout patterns.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-preview preview-violet">
+                        <span class="preview-bar"></span>
+                        <span class="preview-line"></span>
+                        <span class="preview-line"></span>
+                        <span class="preview-block"></span>
+                    </div>
+                    <h3>Personal site</h3>
+                    <p>The final portfolio built from this design system and your future code.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="about" class="about-portfolio">
+            <div class="about-content">
+                <h2>About this portfolio</h2>
+                <p>
+                    This section tells the story honestly: beginner, learning fast, building
+                    real projects, and improving the craft with every page.
+                </p>
+                <a href="#contact" class="btn btn-primary">Contact me</a>
+            </div>
+
+            <aside class="path-card">
+                <span class="path-label">CURRENT PATH</span>
+                <h3>Figma to code</h3>
+                <ol>
+                    <li>Design a clear layout</li>
+                    <li>Build sections with HTML</li>
+                    <li>Style and add interaction</li>
+                </ol>
+            </aside>
+        </section>
+
+        <section id="contact" class="cta-section">
+            <div class="cta-content">
+                <h2>Let's build the next version.</h2>
+                <p>A strong final section with a clear call to action and simple links.</p>
+                <a href="mailto:egorstavropol@gmail.com" class="btn btn-dark">Email me</a>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <p>© 2026 Egor Chernyshov. Built with HTML and CSS.</p>
+        </footer>
+    </main>
+
+    <main class="mobile-portfolio">
+
+        <header class="m-header">
+            <div class="logo">
+                <span class="logo-mark"></span>
+                <span class="logo-text">Egor Chernyshov</span>
+            </div>
+            <button class="menu-toggle" aria-label="Open menu">☰</button>
+        </header>
+
+        <section class="m-hero">
+            <h1>Egor Chernyshov's Portfolio</h1>
+            <p>A clean personal site for learning and showing real practice builds.</p>
+            <a href="#m-work" class="btn btn-primary btn-full">View work</a>
+        </section>
+
+        <div class="m-quote">
+            <p><em>focus: "front-end"</em></p>
+            <p><em>goal: "build clean work"</em></p>
+        </div>
+
+        <section id="m-work" class="m-featured-work">
+            <h2>Featured work</h2>
+
+            <article class="project-card">
+                <div class="project-preview preview-mint">
+                    <span class="preview-bar"></span>
+                    <span class="preview-line"></span>
+                    <span class="preview-line"></span>
+                    <span class="preview-block"></span>
+                </div>
+                <h3>Landing page</h3>
+                <p>Responsive sections for a first project.</p>
+                <div class="project-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-preview preview-amber">
+                    <span class="preview-bar"></span>
+                    <span class="preview-line"></span>
+                    <span class="preview-line"></span>
+                    <span class="preview-block"></span>
+                </div>
+                <h3>Dashboard UI</h3>
+                <p>Compact cards, filters, and charts.</p>
+                <div class="project-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    
+
+</body>
+</html>
