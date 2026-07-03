@@ -184,11 +184,20 @@ p {
 .badge-available::before {
   content: '';
   display: inline-block;
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   background-color: var(--accent);
   animation: pulse-dot 2s infinite;
+  vertical-align: middle;
+}
+/* static dot inside badge when markup provides a .badge-dot */
+.badge-available .badge-dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--accent);
 }
 
 @keyframes pulse-dot {
@@ -241,20 +250,18 @@ p {
 }
 
 .logo-mark {
-  display: inline-block;
+  display: inline-grid;
+  place-items: center;
   width: 28px;
   height: 28px;
   border-radius: 6px;
   background: var(--accent);
-  position: relative;
+  color: #0b1220;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
 }
-.logo-mark::after {
-  content: '';
-  position: absolute;
-  inset: 4px;
-  border-radius: 3px;
-  background: #0b1220;
-}
+.logo-mark::after { display: none; }
 
 .main-nav ul {
   display: flex;
@@ -637,6 +644,18 @@ p {
 .cta-content p {
   color: rgba(11,18,32,0.75);
   font-size: var(--font-size-md);
+}
+
+.contact-buttons {
+  display: flex;
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
+}
+
+.contact-buttons .btn-ghost {
+  border-color: rgba(11,18,32,0.06);
+  color: #0b1220;
+  background: rgba(11,18,32,0.04);
 }
 
 .cta-content .btn-dark {
