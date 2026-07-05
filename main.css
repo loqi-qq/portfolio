@@ -957,7 +957,7 @@ p {
   color: var(--text-primary);
 }
 
-/* Project Card Link Overlay  */
+/*Project Card Link Overlay*/
 .project-card-link {
   position: relative;
   cursor: pointer;
@@ -979,3 +979,4 @@ p {
   border-color: var(--accent);
   box-shadow: 0 0 0 1px var(--accent), 0 16px 48px rgba(52, 227, 176, 0.15);
 }
+
