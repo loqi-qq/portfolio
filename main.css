@@ -897,3 +897,26 @@ p {
   background-color: rgba(52, 227, 176, 0.25);
   color: var(--text-primary);
 }
+
+/* Project Card Link Overlay  */
+.project-card-link {
+  position: relative;
+  cursor: pointer;
+}
+
+.project-card-overlay {
+  position: absolute;
+  inset: 0; 
+  z-index: 1;
+  border-radius: var(--border-radius-lg);
+}
+
+.project-card-overlay:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.project-card-link:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent), 0 16px 48px rgba(52, 227, 176, 0.15);
+}
