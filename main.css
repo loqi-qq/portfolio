@@ -681,6 +681,65 @@ p {
     display: none;
   }
 
+/* Mobile sections */
+.m-about {
+  padding: var(--space-3xl) 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.m-cta {
+  padding-bottom: var(--space-2xl);
+}
+
+.m-footer {
+  padding: var(--space-xl) 0;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.m-footer p {
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+}
+
+/* Mobile hero stats */
+.m-hero .hero-stats {
+  flex-wrap: wrap;
+  gap: var(--space-lg);
+}
+
+/* Mobile quote */
+.m-quote {
+  background-color: var(--bg-panel);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.m-quote p {
+  font-family: 'SF Mono', Monaco, Consolas, monospace;
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Mobile path card adjustments */
+.m-about .path-card {
+  margin-bottom: var(--space-md);
+}
+
+/* Mobile contact buttons */
+.m-cta .contact-buttons {
+  flex-wrap: wrap;
+}
+
+.m-cta .contact-buttons .btn {
+  flex: 1 1 auto;
+  min-width: 120px;
+}
   .mobile-portfolio {
     display: block;
     max-width: 640px;

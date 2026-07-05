@@ -175,61 +175,135 @@
         </footer>
     </main>
 
-    <main class="mobile-portfolio">
+    <div class="mobile-portfolio">
+  <header class="m-header">
+    <div class="logo">
+      <span class="logo-mark">E</span>
+      <span>Egor Chernyshov</span>
+    </div>
+    <button class="menu-toggle" aria-label="Menu">☰</button>
+  </header>
 
-        <header class="m-header">
-            <div class="logo">
-                <span class="logo-mark"></span>
-                <span class="logo-text">Egor Chernyshov</span>
-            </div>
-            <button class="menu-toggle" aria-label="Open menu">☰</button>
-        </header>
+  <section class="m-hero">
+    <span class="badge badge-available">
+      <span class="badge-dot"></span>
+      Available for projects
+    </span>
+    <h1>Egor Chernyshov<br>Front-End Portfolio</h1>
+    <p>I design and build clean web pages, learning Figma, HTML, CSS, and JavaScript.</p>
+    <div class="hero-actions">
+      <a href="#m-work" class="btn btn-primary">View work</a>
+      <a href="resume.pdf" download="Egor-Chernyshov-CV.pdf" class="btn btn-ghost">Download CV</a>
+    </div>
+    <ul class="hero-stats">
+      <li><strong>2</strong><span>projects works</span></li>
+      <li><strong>3</strong><span>featured cases</span></li>
+      <li><strong>100%</strong><span>learning mode</span></li>
+    </ul>
+  </section>
 
-        <section class="m-hero">
-            <h1>Egor Chernyshov's Portfolio</h1>
-            <p>A clean personal site for learning and showing real practice builds.</p>
-            <a href="#m-work" class="btn btn-primary btn-full">View work</a>
-        </section>
+  <div class="m-quote">
+    <p>portfolio.js</p>
+    <p>const me = {<br>
+      &nbsp;&nbsp;name: 'Egor',<br>
+      &nbsp;&nbsp;focus: 'Front-end',<br>
+      &nbsp;&nbsp;tools: ['Figma', 'HTML', 'CSS'],<br>
+      &nbsp;&nbsp;goal: 'ship clean work'<br>
+      }</p>
+  </div>
 
-        <div class="m-quote">
-            <p><em>focus: "front-end"</em></p>
-            <p><em>goal: "build clean work"</em></p>
+  <section class="m-featured-work" id="m-work">
+    <div class="section-header">
+      <h2>Featured work</h2>
+      <p>Three project cards with enough structure for real HTML and CSS practice.</p>
+    </div>
+
+    <article class="project-card project-card-link">
+      <a href="landing_page.html" target="_blank" rel="noopener noreferrer" class="project-card-overlay" aria-label="Open Landing page"></a>
+      <div class="project-preview preview-mint">
+        <span class="preview-bar"></span>
+        <span class="preview-line"></span>
+        <span class="preview-line"></span>
+        <span class="preview-block"></span>
+      </div>
+      <h3>Landing page ↗</h3>
+      <p>A polished first page built with responsive sections and clear calls to action.</p>
+      <div class="project-tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+      </div>
+    </article>
+
+    <article class="project-card project-card-link">
+      <a href="#" class="project-card-overlay" aria-label="Open Dashboard UI"></a>
+      <div class="project-preview preview-amber">
+        <span class="preview-bar"></span>
+        <span class="preview-line"></span>
+        <span class="preview-line"></span>
+        <span class="preview-block"></span>
+      </div>
+      <h3>Dashboard UI</h3>
+      <p>A compact interface for cards, charts, filters, and repeated layout patterns.</p>
+      <div class="project-tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+      </div>
+    </article>
+
+    <article class="project-card project-card-link">
+      <a href="https://loqi-qq.github.io/portfolio/" target="_blank" rel="noopener noreferrer" class="project-card-overlay" aria-label="Open Personal site"></a>
+      <div class="project-preview preview-violet">
+        <span class="preview-bar"></span>
+        <span class="preview-line"></span>
+        <span class="preview-line"></span>
+        <span class="preview-block"></span>
+      </div>
+      <h3>Personal site ↗</h3>
+      <p>The final portfolio built from this design system and your future code.</p>
+      <div class="project-tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">Live</span>
+      </div>
+    </article>
+  </section>
+
+  <section class="m-about">
+    <div class="section-header">
+      <h2>About this portfolio</h2>
+      <p>This section tells the story honestly: beginner, learning fast, building real projects, and improving the craft with every page.</p>
+    </div>
+    <div class="path-card">
+      <span class="path-label">Current path</span>
+      <h3>Figma to code</h3>
+      <ol>
+        <li>Design a clear layout</li>
+        <li>Build sections with HTML</li>
+        <li>Style and add interaction</li>
+        <li>Let's build the next version</li>
+      </ol>
+    </div>
+    <a href="#m-contact" class="btn btn-primary btn-full">Contact me</a>
+  </section>
+
+  <section class="m-cta" id="m-contact">
+    <div class="cta-section">
+      <div class="cta-content">
+        <h2>Let's build the next version.</h2>
+        <p>A strong final section with a clear call to action and simple links.</p>
+        <div class="contact-buttons">
+          <a href="mailto:egorstavropol@gmail.com" class="btn btn-ghost">Email me</a>
+          <a href="https://github.com/loqi-qq" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">GitHub</a>
+          <a href="https://t.me/uic1deboy" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Telegram</a>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <section id="m-work" class="m-featured-work">
-            <h2>Featured work</h2>
-
-            <article class="project-card">
-                <div class="project-preview preview-mint">
-                    <span class="preview-bar"></span>
-                    <span class="preview-line"></span>
-                    <span class="preview-line"></span>
-                    <span class="preview-block"></span>
-                </div>
-                <h3>Landing page</h3>
-                <p>Responsive sections for a first project.</p>
-                <div class="project-tags">
-                    <span class="tag">HTML</span>
-                    <span class="tag">CSS</span>
-                </div>
-            </article>
-
-            <article class="project-card">
-                <div class="project-preview preview-amber">
-                    <span class="preview-bar"></span>
-                    <span class="preview-line"></span>
-                    <span class="preview-line"></span>
-                    <span class="preview-block"></span>
-                </div>
-                <h3>Dashboard UI</h3>
-                <p>Compact cards, filters, and charts.</p>
-                <div class="project-tags">
-                    <span class="tag">HTML</span>
-                    <span class="tag">CSS</span>
-                </div>
-            </article>
-        </section>
-    </main>
+  <footer class="m-footer">
+    <p>© 2026 Egor Chernyshov. Built with HTML and CSS.</p>
+  </footer>
+</div>
 
     
 
